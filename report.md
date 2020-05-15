@@ -10,6 +10,8 @@ Project Objectives:
 
 Problem Definition:
 
+Stakeholders:
+
 Design Thinking Principles Approach:
 
 Agile Scrum Outline:
@@ -23,6 +25,6 @@ Advantages of System:
 
 Consequences of System Failure:
 
-References:
+References: 
 
 Appendices:
