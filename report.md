@@ -15,29 +15,27 @@ Consequences of System Failure                                       (Line )
 References                                                                          (Line )
 Appendices                                                                         (Line )
 
-Acknowledgements:
+Executive Summary: Harrison
 
-Executive Summary:
+Project Objectives: Leon
 
-Project Objectives:
+Problem Definition: Abhinav
 
-Problem Definition:
+Stakeholders: Albert
 
-Stakeholders:
+Design Thinking Principles Approach: Harrison
 
-Design Thinking Principles Approach:
+Agile Scrum Outline: Albert
 
-Agile Scrum Outline:
-
-Assumptions:
+Assumptions: Leon
 (based off system analysis)
 
-Proposed Workproducts & Models:
+Proposed Workproducts & Models: Harrison
 
-Advantages of System:
+Advantages of System: Abhinav
 
-Consequences of System Failure:
+Consequences of System Failure: Abhinav
 
-References: 
+References: Everyone
 
-Appendices:
+Appendices: Everyone
