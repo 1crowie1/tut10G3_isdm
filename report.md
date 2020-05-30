@@ -39,12 +39,16 @@ Assumptions: Leon
 Proposed Workproducts & Models: Harrison
 
 Usecase Diagram for the Travel Company CMC System:
-![Usecase Diagram](usecase.png)
+![Usecase Diagram - 30/05/2020](usecase.png)
 
 CMC System Class Diagram:
-![Class Diagram](ISDM_classDiagram.png)
+![Class Diagram - 30/05/2020](ISDM_classDiagram.png)
 
+Activity Diagram for User making a call:
+![ActivityDiagram 1- 30/05/2020](activity1.png)
 
+Activity Diagram for Relationship manager calling new potential customer:
+![Activity Diagram 2 - 30/05/2020](activity2.png)
 
 Advantages of System: Abhinav
 
