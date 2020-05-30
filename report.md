@@ -18,15 +18,23 @@ Appendices                                                                      
 Executive Summary: Harrison
 
 Project Objectives: Leon
-Number and types of holiday packages makes system operation difficult/complicated. A subsequent method of simplifying operations involved with the packages could be implemented
+Simplify operations involved with the volume and types holiday packages
 
-Only a 10 minute questionnaire is initally used to develop RM profiles. Taking more time to better develop an employees RM profile may increase the efficiency of skill matching.
+Develop a more detailed initial profile for RM employees at hiring
 
-The preloaded criteria for inbound call customers that leads to a calculated skill score and thus the priority of matching coud be an avenue of improvement.
+Improve criteria used for score calculation of inbound calls
 
-Outbound calls are determined through a database that holds details of customers. A script is then developed by the system to improve RM service. Either increasing the volume of data that the database holds on customers or improving the script/guidlines that are developed may increase sales. 
+Imrpove criteria used for skill score calculation of RMs 
 
-Increasing the number of solutions the Interactive Voice Response unit can support may help filter out the customers who are prepared to make a sale, or a just asking a question. 
+Increase volume of information stored in database 
+
+Enchance script/guidline output system quality 
+
+Increase complexity of tuple used for targeting list 
+
+Increase adapdability of Interactive Voice Response Unit 
+
+Introduce system whereby customers of a low priority can be handed to low level RMs or other employees in the business
 
 Problem Definition: Abhinav
 
@@ -38,6 +46,22 @@ Agile Scrum Outline: Albert
 
 Assumptions: Leon
 (based off system analysis)
+
+Profiler Tool is developed enough for the uses of the business 
+
+There are more employees that are available other than RMs
+
+Database used for targeting list has sufficient volumes of data to produce scripts and guidlines for RMs 
+
+RMs already have a developed knowledge of holiday packages and thus able to service customers
+
+The skill score calculation is accurate enough to portray RMs skill correctly 
+
+Score calculation used for customers is accurate enough to correctly identify the likelihood of customers to make a purchase 
+
+The system can sufficiently match RM profiles with customer details
+
+Method used to adjust RM profiles over time is balanced and accurate 
 
 Proposed Workproducts & Models: Harrison
 
