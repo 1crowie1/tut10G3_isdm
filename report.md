@@ -53,7 +53,7 @@ There are more employees that are available other than RMs
 
 Database used for targeting list has sufficient volumes of data to produce scripts and guidlines for RMs 
 
-RMs already have a developed knowledge of holiday packages and thus able to service customers
+RMs already have a developed knowledge of holiday packages and thus able to service customers without training
 
 The skill score calculation is accurate enough to portray RMs skill correctly 
 
