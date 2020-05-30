@@ -16,6 +16,7 @@ Appendices                                                                      
 
 Executive Summary: Harrison
 
+
 Project Objectives: Leon
 
 Problem Definition: Abhinav
@@ -37,10 +38,20 @@ Assumptions: Leon
 
 Proposed Workproducts & Models: Harrison
 
+Usecase Diagram for the Travel Company CMC System:
+![Usecase Diagram](usecase.png)
+
+CMC System Class Diagram:
+![Class Diagram](ISDM_classDiagram.png)
+
+
+
 Advantages of System: Abhinav
 
 Consequences of System Failure: Abhinav
 
 References: Everyone
+
+Harshani Chathurika, Jul 17 2019, Principles of Design Thinking, Viewed 29/05/2020, <https://uxplanet.org/principles-of-design-thinking-stages-of-design-thinking-b2cc219063ac>
 
 Appendices: Everyone
