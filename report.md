@@ -120,6 +120,10 @@ Visual Paradigm, 2020, UML Collaboration Diagram, Viewed 30/05/2020, <https://ww
 
 Lucid Chart, 2019, UML Activity Diagram Tutorial, Viewed 30/05/2020, <https://www.lucidchart.com/pages/uml-activity-diagram>
 
+Atlassian. 2020. Agile Scrum Roles | Atlassian. [online] Available at: <https://www.atlassian.com/agile/scrum/roles> [Accessed 31 May 2020].
+
+Scrum.org. 2020. What Is Scrum?. [online] Available at: <https://www.scrum.org/resources/what-is-scrum> [Accessed 31 May 2020].
+
 Appendices: Everyone
 
 CMC - Call Management Center
@@ -127,3 +131,4 @@ CMC - Call Management Center
 UML - Uniform Modelling Language
 
 RM - Relationship Manager
+
