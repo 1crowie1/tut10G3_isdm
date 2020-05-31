@@ -1,7 +1,6 @@
 Call Management Center Information System Business Report-
 
 Table of Contents:
-Acknowledgements                                                            (Line 18-20)
 Executive Summary                                                            (Line )
 Project Objectives                                                               (Line )
 Problem Definition                                                               (Line )
