@@ -62,4 +62,8 @@ References: Everyone
 
 Harshani Chathurika, Jul 17 2019, Principles of Design Thinking, Viewed 29/05/2020, <https://uxplanet.org/principles-of-design-thinking-stages-of-design-thinking-b2cc219063ac>
 
+Visual Paradigm, 2020, UML Collaboration Diagram, Viewed 30/05/2020, <https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml-collaboration-diagram/>
+
+Lucid Chart, 2019, UML Activity Diagram Tutorial, Viewed 30/05/2020, <https://www.lucidchart.com/pages/uml-activity-diagram>
+
 Appendices: Everyone
