@@ -34,6 +34,9 @@ The problem faced by the travel company must be precisely defined in order to en
 
 
 Stakeholders: Albert
+The stakeholders involved in this project include the major travel company funding this project, the relationship managers the employees of the company that this project is for, the customers the people who will be affected by this project and the development team who will be developing the project.
+
+
 
 Design Thinking Principles Approach: Harrison
 
@@ -44,6 +47,9 @@ Next is the principle of prototyping. Once a range of feasible solutions has bee
 Finally is the testing principle phase. Once a solution has been identified and is in development testing is required to assure it meets the requirements and functions as intended before it is implemented as a live solution. In the context of the CMC system, the most effective method for implementation would be a piloted approach. This would allow for ample live testing determine a satisfactory working system is running as well as fix any bugs that are bound to arise as the system faces its first interaction with the real everyday business processes.
 
 Agile Scrum Outline: Albert
+scrum is an agile methodology, commonly used in software development in which the scrum team aims accomplish goals in short periods of time, to be flexible in their development and to adapt to any changes needed. There are five values associated with scrum, courage, focus, commitment, respect and openness. These are the five values that our team would follow the entire project, these five values have helped us work together as a team and improved our teamwork and communication together. 
+There are three roles in the scrum team, the scrum master, product owner and the development team. The scrum master is responsible for ensuring that the members of the team follow the scrum values and practice, the scrum master is also responsible for helping the product owner understand the scrum team to help them work better together. The product owner is responsible for knowing the customer of the product and setting a clear vision for the scrum team they are also mainly responsible for the product backlog. The development team is the one that is actually responsible for developing the product they have a responsibility to be transparent about their work and adapt to any changes needed. These roles help us to define each member’s responsibility and help us define a clear goal for each role.  there are five events that take place in scrum, The Sprint planning, Daily scrum, Sprint review, Sprint retrospective. The sprint is a time-box period of one month or less where a potential part of the product is created, after a sprint is completed the next one immediately starts, the planning for the sprints takes place in the sprint planning where goals for the next sprint are discussed. The daily scrum is an event that takes place daily where the development team plans their activity for the day. the sprint review takes place after the sprint and everybody is involved, this is where the product backlog is reviewed and the development talks about what went well and what went wrong about the sprint, the sprint retrospective takes place after the sprint review and plans are discussed for the next sprint with improvements that could be made discussed. Using these events as a framework to develop our product we have worked in a very organized manner efficiently. There are three artifacts used in the scrum methodology, the product backlog, sprint backlog and the increment. The product backlog is simply a list of everything that will be needed for the product, the sprint backlog is a list of items selected for the sprint and the increment is a list of items completed from the sprint backlog. Using these artifacts, we organize our goals and the requirement for the project which can be adapted as needed
+
 
 Assumptions: Leon
 (based off system analysis)
