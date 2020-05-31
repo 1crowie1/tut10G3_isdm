@@ -51,6 +51,9 @@ Activity Diagram for User making a call:
 Activity Diagram for Relationship manager calling new potential customer:
 ![Activity Diagram 2 - 30/05/2020](activity2.png)
 
+Collaboration Diagram for Travel Company CMC System:
+![Collaboration Diagram - 31/05/2020](collab.png)
+
 Advantages of System: Abhinav
 
 Consequences of System Failure: Abhinav
