@@ -36,7 +36,7 @@ Proposed Workproducts & Models: Harrison
 
 Advantages of System: Abhinav
 
--
+Advantages of implementing the new system stretch far and wide by not only eliminating current problems faced by our client, but also through providing a substantial improvement in functionality and efficiency for achieving business objectives and facilitating daily business activities as outlined in the objectives and problem definition. The system will benefit all areas and stakeholders associated with the travel company through allowing them to carry out their intrinsic and critical business operations in a more effective manner. This provides our client with a competitive advantage and will ultimately lead to an increase in shareholder wealth.
 
 Consequences of System Failure: Abhinav
 
