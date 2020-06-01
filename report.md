@@ -5,49 +5,41 @@ Call Management Center Information System Business Report-
 Online Video: [Travel Company Assessment Runthrough](www.youtube.com/) <- insert hyperlink in
 
 Table of Contents:
-Project Objectives                                                               (Line - 23)
-Problem Definition                                                               (Line - 55)
-Stakeholders                                                                       (Line - 70)
-Design Thinking Principles Approach                                 (Line - 87)
-Agile Scrum Outline                                                            (Line - 98)
-Assumptions                                                                       (Line - 107)
-Proposed Workproducts & Models                                     (Line - 130)
-Advantages of System                                                        (Line - 150)
-Consequences of System Failure                                       (Line - 157)
-References                                                                          (Line - 164)
-Appendices                                                                         (Line - 179)
+
+Project Objectives                                                               (Line - 24)  
+Problem Definition                                                               (Line - 47)  
+Stakeholders                                                                       (Line - 62)  
+Design Thinking Principles Approach                                 (Line - 79)  
+Agile Scrum Outline                                                            (Line - 90)  
+Assumptions                                                                       (Line - 99)  
+Proposed Workproducts & Models                                     (Line - 122)  
+Advantages of System                                                        (Line - 142)  
+Consequences of System Failure                                       (Line - 149)  
+References                                                                          (Line - 156)  
+Appendices                                                                         (Line - 171)  
 
 
 
 
 Project Objectives:
 
-1.
-Simplify operations involved with the volume and types holiday packages
+1. Simplify operations involved with the volume and types holiday packages
 
-2.
-Develop a more detailed initial profile for RM employees at hiring
+2. Develop a more detailed initial profile for RM employees at hiring
 
-3.
-Improve criteria used for score calculation of inbound calls
+3. Improve criteria used for score calculation of inbound calls
 
-4.
-Imrpove criteria used for skill score calculation of RMs 
+4. Imrpove criteria used for skill score calculation of RMs 
 
-5.
-Increase volume of information stored in database 
+5. Increase volume of information stored in database 
 
-6.
-Enchance script/guidline output system quality 
+6. Enchance script/guidline output system quality 
 
-7.
-Increase complexity of tuple used for targeting list 
+7. Increase complexity of tuple used for targeting list 
 
-8.
-Increase adapdability of Interactive Voice Response Unit 
+8. Increase adapdability of Interactive Voice Response Unit 
 
-9.
-Introduce system whereby customers of a low priority can be handed to low level RMs or other employees in the business
+9. Introduce system whereby customers of a low priority can be handed to low level RMs or other employees in the business
 
 
 
@@ -129,20 +121,20 @@ Method used to adjust RM profiles over time is balanced and accurate
 
 Proposed Workproducts & Models:
 
-Usecase Diagram for the Travel Company CMC System:
-![Usecase Diagram - 30/05/2020](usecase.png)
+Usecase Diagram for the Travel Company CMC System:  
+![Usecase Diagram - 30/05/2020](usecase.png)  
 
-CMC System Class Diagram:
-![Class Diagram - 30/05/2020](ISDM_classDiagram.png)
+CMC System Class Diagram:  
+![Class Diagram - 30/05/2020](ISDM_classDiagram.png)  
 
-Activity Diagram for User making a call:
-![ActivityDiagram 1- 30/05/2020](activity1.png)
+Activity Diagram for User making a call:  
+![ActivityDiagram 1- 30/05/2020](activity1.png)  
 
-Activity Diagram for Relationship manager calling new potential customer:
-![Activity Diagram 2 - 30/05/2020](activity2.png)
+Activity Diagram for Relationship manager calling new potential customer:  
+![Activity Diagram 2 - 30/05/2020](activity2.png)  
 
-Collaboration Diagram for Travel Company CMC System:
-![Collaboration Diagram - 31/05/2020](collab.png)
+Collaboration Diagram for Travel Company CMC System:  
+![Collaboration Diagram - 31/05/2020](collab.png)  
 
 
 
