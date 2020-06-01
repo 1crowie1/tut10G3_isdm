@@ -94,7 +94,7 @@ The sprint is a time-box period of one month or less where a potential part of t
 
 Assumptions:
 
-Assumptions, within the analysis of a potential business systems,  allow for the conversion and essential 'filling in the gaps' when translating from presented business processes to technical terminology that can be further broken down and developed. Assumptions
+Assumptions, within the analysis of a potential business systems,  allow for the conversion and 'filling in the gaps' when translating from presented business processes to technical terminology that can be further broken down and developed. Assumptions result in a complete picture of a system without all its components being specifically depicted. This must be further checked with the client to ensure that any assumptions made do not contridict their intentions for the system. The assumptions made within the analysis of theTravel company brief include:
 
 Profiler Tool is developed enough for the uses of the business 
 
