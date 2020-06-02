@@ -50,7 +50,7 @@ The problem faced by the travel company must be precisely defined in order to en
 
 (1) The new system must be speedier and more efficient than the current one, reducing stress and preventing frustration on part of the customers and other stakeholders. This will be achieved through increasing the adaptability of the Interactive Voice Response Unit and making sure that customers of a low priority can be handed to low level RMs or other employees in the business.
 
-(2)	The new system should simplify the operations involved with the volume and types holiday packages while developing a more detailed initial profile for relationship managers at the time of their hiring with a more detailed analysis of their characteristics and how best to use them to sell holiday packages.
+(2) The new system should simplify the operations involved with the volume and types holiday packages while developing a more detailed initial profile for relationship managers at the time of their hiring with a more detailed analysis of their characteristics and how best to use them to sell holiday packages.
 
 (3) The new system should improve criteria used for score calculation of inbound calls by increasing complexity of tuples used for targeting list, this will be achieved through improving the criteria used for skill score calculation of RMs which will also consequently enhance the script/guideline output system quality to equip the RMs with a more effective strategy.
 
