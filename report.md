@@ -29,15 +29,15 @@ Project Objectives:
 
 3. Improve criteria used for score calculation of inbound calls
 
-4. Imrpove criteria used for skill score calculation of RMs 
+4. Improve criteria used for skill score calculation of RMs 
 
 5. Increase volume of information stored in database 
 
-6. Enchance script/guidline output system quality 
+6. Enhance script/guideline output system quality 
 
 7. Increase complexity of tuple used for targeting list 
 
-8. Increase adapdability of Interactive Voice Response Unit 
+8. Increase adaptability of Interactive Voice Response Unit 
 
 9. Introduce system whereby customers of a low priority can be handed to low level RMs or other employees in the business
 
