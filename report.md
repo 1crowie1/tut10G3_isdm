@@ -2,7 +2,7 @@
 
 Call Management Center Information System Business Report-
 
-Online Video: [Travel Company Assessment Runthrough](https://youtu.be/HM_T52jTLXk)
+Online Video: [Travel Company Assessment Runthrough](https://youtu.be/HM_T52jTLXk) - https://youtu.be/HM_T52jTLXk
 
 Table of Contents:
 
