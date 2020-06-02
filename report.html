@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>report.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p><img src="coversheet.png" alt=""></p>
+<p>Call Management Center Information System Business Report-</p>
+<p>Online Video: <a href="https://youtu.be/HM_T52jTLXk">Travel Company Assessment Runthrough</a> - https://youtu.be/HM_T52jTLXk</p>
+<p>Table of Contents:</p>
+<p>Project Objectives                                                               (Line - 24)<br>
+Problem Definition                                                               (Line - 47)<br>
+Stakeholders                                                                       (Line - 62)<br>
+Design Thinking Principles Approach                                 (Line - 79)<br>
+Agile Scrum Outline                                                            (Line - 90)<br>
+Assumptions                                                                       (Line - 99)<br>
+Proposed Workproducts &amp; Models                                     (Line - 122)<br>
+Advantages of System                                                        (Line - 142)<br>
+Consequences of System Failure                                       (Line - 149)<br>
+References                                                                          (Line - 156)<br>
+Appendices                                                                         (Line - 171)</p>
+<p>Project Objectives:</p>
+<ol>
+<li>
+<p>Simplify operations involved with the volume and types holiday packages</p>
+</li>
+<li>
+<p>Develop a more detailed initial profile for RM employees at hiring</p>
+</li>
+<li>
+<p>Improve criteria used for score calculation of inbound calls</p>
+</li>
+<li>
+<p>Improve criteria used for skill score calculation of RMs</p>
+</li>
+<li>
+<p>Increase volume of information stored in database</p>
+</li>
+<li>
+<p>Enhance script/guideline output system quality</p>
+</li>
+<li>
+<p>Increase complexity of tuple used for targeting list</p>
+</li>
+<li>
+<p>Increase adaptability of Interactive Voice Response Unit</p>
+</li>
+<li>
+<p>Introduce system whereby customers of a low priority can be handed to low level RMs or other employees in the business</p>
+</li>
+</ol>
+<p>Problem Definition:</p>
+<p>The problem faced by the travel company must be precisely defined in order to enable the development of an effective and greatly beneficial solution that meets the needs of our client’s expectations and allows them to improve their business functions. Customers having long wait times for relationship managers, or being directed to a relationship manager with whom they don’t work well with after struggling to get through the interactive voice response unit are key issues and few of many that plaque other call management centres, our system seeks to address these key issues among others. The empathy principle is a valuable tool in creating solutions that possess the functionality required by the end users, and so by putting ourselves in the shoes of the stakeholders we have identified these key issues:</p>
+<p>(1) The new system must be speedier and more efficient than the current one, reducing stress and preventing frustration on part of the customers and other stakeholders. This will be achieved through increasing the adaptability of the Interactive Voice Response Unit and making sure that customers of a low priority can be handed to low level RMs or other employees in the business.</p>
+<p>(2) The new system should simplify the operations involved with the volume and types holiday packages while developing a more detailed initial profile for relationship managers at the time of their hiring with a more detailed analysis of their characteristics and how best to use them to sell holiday packages.</p>
+<p>(3) The new system should improve criteria used for score calculation of inbound calls by increasing complexity of tuples used for targeting list, this will be achieved through improving the criteria used for skill score calculation of RMs which will also consequently enhance the script/guideline output system quality to equip the RMs with a more effective strategy.</p>
+<p>(4) And finally to provide for the growth of the business the new system must increase volume of information stored in database.</p>
+<p>Stakeholders:</p>
+<p>Stakeholders of a bussiness project are defined as those who may come in contact with, are are dirrently involved in or hold specific interest in regard to the business processed carried out by a developed system. With this their perspectives and individual inputs into the design and functionality of the system dictate the end result. As the developers of the Travel Company's Call Management Center Software, it is import to weight and evaluate the requirements and feedback from these stakeholders. The first step in this process is to identify all revelant stakeholders of the system being developed. They are as follows:</p>
+<p>Client / Travel Company - As the client of this development project, the requirements and restrictions, being technical, operational, economic or scheduling, that are imposed by this stakeholder must be evaluated and abided by to ensure the continuous development of said project.</p>
+<p>User / Relationship Managers - As a user with high level access and a large dependency on the system the requirements and feedback given by the Relationship managers will be vital in the development of this system. The Relationship Managers must be able to easily understand and make use of the system in order for it to function and, therefore, play a central role in the business processes that this system attempts to compliment.</p>
+<p>User / Cusomters - Customers are the target users of the system. This dictates that the system must be appealing and useful for them, especially as its purpose if for sales and marketing reasons. Users will contact the travel company and by contacted for the main purpose of purchasing a holiday package, therefore their experience with the system will play a large role in marketing and encouraging the user to make the purchase.</p>
+<p>Developers - Developers must understand and agree with the methods of which the system is being developed and integrated. This means that the input of developers must play a large role in the designing of not only the system itself, but the business requirements that compose it.</p>
+<p>Investors - Those who hold a financial interest in the project at hand must be revered as important stakeholders in the system's development. Investors must be able to see an effective use of resources in terms of server processing or storage costs as well as being able to advise the client on budgetary restrictions dirrectly relating to the development of the system. Ensuring that the investors are identified and acknowledged as important stakeholders in the system is crucial for any development's successful completion.</p>
+<p>Design Thinking Principles Approach:</p>
+<p>This system is user-focused and is targeted at providing efficient and quick management of incoming calls. In terms of the design thinking principles, empathising with the user requires an analysis of the system from their perspective. Gathering an accurate and measurable understanding of the system from this perspective is the main barrier to the principle at hand. To do so, the use of interviewing tools in the form of client/stakeholder meetings, surveys and the like can be implemented to obtain the required information. The empathising principle requires identifying the difficult or least user-friendly aspects of the current solution, i.e. the points of greatest resistance. Within the context of this system the most resistance to the system could be long wait times for RMs (relationship managers), incorrect assumptions made about a customer in the RM routing system or even difficulty interacting with an Interactive Voice Response Unit when directed to it in a busy time.
+Following on from this is the problem definition principle. Within this stage the issues with the current system that are planning to be overcome by the new system as well as the problems identified by users and stakeholders within the empathise principle are documented and analysed. These problems are broken down into their key components and the aspect of the system from which they relate to. From this, a clear view of what functionality is required by the new system is discovered. Another effective technique that can be used in conjunction with the first principle is to include user suggestions for how these problems that they have identified can be resolved, giving another perspective and depicting the functionality's issues in more detail. The RM system presents an issue in the operation of a major travel company's call management centre (CMC), how their customers are categorised and routed as well as the identification and prioritisation of potential new customers. These problems along with user feedback provide the base for the problem definition principle and are then further broken down to move into the next stage.
+Ideation otherwise known as the ideate principle aims to construct solutions to the defined problems. This involves the identification of each core problem and works to brainstorm and provide potential options for resolutions. This stage of the design thinking processes is highly collaborative and requires all involved parties working together to create a feasible solution for each problem. For the ideation stage of the RM system, all team members go through the problems outlined, inferred from the discussion topic information on the travel company's call management centre. From this, a plan of implementation of the most feasible solutions can be made.
+Next is the principle of prototyping. Once a range of feasible solutions has been made for each of the core problems, a prototype for comparison or compatibility allows for the most beneficial solutions to be chosen for implementation with an assurance that their designed or logical functionality solves the problems at hand in a way the seamlessly interacts and does not interfere with other system functions. For the proposed CMC system, a range of logic algorithms can be simulated for prototyping purposes in a controlled environment as well as trials on existing or potential customers. This allows for solutions that may work in theory but not necessarily in practice to be identified and replaced with solutions that work in the given contextual situation.
+Finally is the testing principle phase. Once a solution has been identified and is in development testing is required to assure it meets the requirements and functions as intended before it is implemented as a live solution. In the context of the CMC system, the most effective method for implementation would be a piloted approach. This would allow for ample live testing to determine a satisfactory working system is running as well as fix any bugs that are bound to arise as the system faces its first interaction with the real everyday business processes.</p>
+<p>Agile Scrum Outline:</p>
+<p>scrum is an agile methodology, commonly used in software development in which the scrum team aims accomplish goals in short periods of time, to be flexible in their development and to adapt to any changes needed. There are five values associated with scrum, courage, focus, commitment, respect and openness. These are the five values that our team would follow the entire project, these five values have helped us work together as a team and improved our teamwork and communication together.
+There are three roles in the scrum team, the scrum master, product owner and the development team. The scrum master is responsible for ensuring that the members of the team follow the scrum values and practice, the scrum master is also responsible for helping the product owner understand the scrum team to help them work better together. The product owner is responsible for knowing the customer of the product and setting a clear vision for the scrum team they are also mainly responsible for the product backlog. The development team is the one that is actually responsible for developing the product they have a responsibility to be transparent about their work and adapt to any changes needed. These roles help us to define each member’s responsibility and help us define a clear goal for each role.There are five events that take place in scrum, The Sprint, Sprint planning, Daily scrum, Sprint review, Sprint retrospective.
+The sprint is a time-box period of one month or less where a potential part of the product is created, after a sprint is completed the next one immediately starts, the planning for the sprints takes place in the sprint planning where goals for the next sprint are discussed. The daily scrum is an event that takes place daily where the development team plans their activity for the day. the sprint review takes place after the sprint and everybody is involved, this is where the product backlog is reviewed and the development team talks about what went well and what went wrong about the sprint, the sprint retrospective takes place after the sprint review and plans are discussed for the next sprint with improvements that could be made discussed. Using these events as a framework to develop our product we have worked in a very organized manner efficiently. There are three artifacts used in the scrum methodology, the product backlog, sprint backlog and the increment. The product backlog is simply a list of everything that will be needed for the product, the sprint backlog is a list of items selected for the sprint and the increment is a list of items completed from the sprint backlog. Using these artifacts, we organize our goals and the requirement for the project which can be adapted as needed</p>
+<p>Assumptions:</p>
+<p>Assumptions, within the analysis of a potential business systems,  allow for the conversion and 'filling in the gaps' when translating from presented business processes to technical terminology that can be further broken down and developed. Assumptions result in a complete picture of a system without all its components being specifically depicted. This must be further checked with the client to ensure that any assumptions made do not contridict their intentions for the system. The assumptions made within the analysis of theTravel company brief include:</p>
+<p>Profiler Tool is developed enough for the uses of the business</p>
+<p>There are more employees that are available other than RMs</p>
+<p>Database used for targeting list has sufficient volumes of data to produce scripts and guidlines for RMs</p>
+<p>RMs already have a developed knowledge of holiday packages and thus able to service customers without training</p>
+<p>The skill score calculation is accurate enough to portray RMs skill correctly</p>
+<p>Score calculation used for customers is accurate enough to correctly identify the likelihood of customers to make a purchase</p>
+<p>The system can sufficiently match RM profiles with customer details</p>
+<p>Method used to adjust RM profiles over time is balanced and accurate</p>
+<p>Proposed Workproducts &amp; Models:</p>
+<p>Usecase Diagram for the Travel Company CMC System:<br>
+<img src="usecase.png" alt="Usecase Diagram - 30/05/2020"></p>
+<p>CMC System Class Diagram:<br>
+<img src="ISDM_classDiagram.png" alt="Class Diagram - 30/05/2020"></p>
+<p>Activity Diagram for User making a call:<br>
+<img src="activity1.png" alt="ActivityDiagram 1- 30/05/2020"></p>
+<p>Activity Diagram for Relationship manager calling new potential customer:<br>
+<img src="activity2.png" alt="Activity Diagram 2 - 30/05/2020"></p>
+<p>Collaboration Diagram for Travel Company CMC System:<br>
+<img src="collab.png" alt="Collaboration Diagram - 31/05/2020"></p>
+<p>Advantages of System:</p>
+<p>Advantages of implementing the new system stretch far and wide by not only eliminating current problems faced by our client, but also through providing a substantial improvement in functionality and efficiency for achieving business objectives and facilitating daily business activities as outlined in the objectives and problem definition. The system will benefit all areas and stakeholders associated with the travel company through allowing them to carry out their intrinsic and critical business operations in a more effective manner. This provides our client with a competitive advantage and will ultimately lead to an increase in shareholder wealth.</p>
+<p>Consequences of System Failure:</p>
+<p>The consequences if the new system fails can have a profound negative impact on the smooth operation of our client, this may affect anything from the relationship managers being unable to make to create new leads and contact new potential customers, or being unable to follow up and contact customers who are already in the process of making a purchasing decision. This may lead to causing the business to halt operations as the efficient functioning of the call management system centre is essential for business activities and ultimately required to enable the maximisation of shareholder wealth. The estimated impact of such a failure would be directly dependent on how heavily the system is relied upon by stakeholders such as the relationship managers for their business activities. This is also linked with how much of the system is currently implemented and in use or at what stage it is in during its implementation phase, as well as how well the contingency plans can take over or the availability of a backup system. This system is of critical importance to business function and is greatly depended on, therefore it is of equal importance and in the best interests of all shareholders to ensure the system is designed and can be incorporated in the business in a way that guarantees its rock solid reliability.</p>
+<p>References:</p>
+<p>Harshani Chathurika, Jul 17 2019, Principles of Design Thinking, Viewed 29/05/2020, <a href="https://uxplanet.org/principles-of-design-thinking-stages-of-design-thinking-b2cc219063ac"><a href="https://uxplanet.org/principles-of-design-thinking-stages-of-design-thinking-b2cc219063ac">https://uxplanet.org/principles-of-design-thinking-stages-of-design-thinking-b2cc219063ac</a></a></p>
+<p>Visual Paradigm, 2020, UML Collaboration Diagram, Viewed 30/05/2020, <a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml-collaboration-diagram/"><a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml-collaboration-diagram/">https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml-collaboration-diagram/</a></a></p>
+<p>Lucid Chart, 2019, UML Activity Diagram Tutorial, Viewed 30/05/2020, <a href="https://www.lucidchart.com/pages/uml-activity-diagram"><a href="https://www.lucidchart.com/pages/uml-activity-diagram">https://www.lucidchart.com/pages/uml-activity-diagram</a></a></p>
+<p>Atlassian. 2020. Agile Scrum Roles | Atlassian. [online] Available at: <a href="https://www.atlassian.com/agile/scrum/roles">https://www.atlassian.com/agile/scrum/roles</a> [Accessed 31 May 2020].</p>
+<p>Scrum.org. 2020. What Is Scrum?. [online] Available at: <a href="https://www.scrum.org/resources/what-is-scrum">https://www.scrum.org/resources/what-is-scrum</a> [Accessed 31 May 2020].</p>
+<p>Appendices:</p>
+<p>CMC - Call Management Center</p>
+<p>UML - Uniform Modelling Language</p>
+<p>RM - Relationship Manager</p>
+
+</body>
+</html>
